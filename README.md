@@ -23,6 +23,8 @@ The *Pharmacy Management & Billing System* streamlines daily operations for phar
   - Unique incremental bill generation (BILL-1001, BILL-1002, etc.).
   - Detailed sale history logging in sales.csv with total revenue summary.
 
+---
+
 ##  Technologies Used
 
 - *Language*: Python 3.x
@@ -31,8 +33,11 @@ The *Pharmacy Management & Billing System* streamlines daily operations for phar
   - os — File existence checks and path verification.
   - datetime — Timestamping sales transactions.
 
+---
+
 ##  Repository Structure
 
+```text
 pharmacy-management-system/
 │
 ├── main.py             # Application entry point & main menu loop
