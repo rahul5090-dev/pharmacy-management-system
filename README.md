@@ -1,49 +1,27 @@
-# pharmacy-management-system
-A modular CLI-based pharmacy management and billing system in Python featuring inventory tracking, automated GST billing, low stock alerts, and CSV sales logging.
-##  Project Overview
+# Pharmacy Management & Billing System
 
-The *Pharmacy Management & Billing System* streamlines daily operations for pharmaceutical stores. Built with core Python standard libraries, it eliminates manual stockkeeping errors by automating inventory updates, applying standard tax (12% GST) on medicine bills, generating formatted receipts, and tracking critical inventory shortages.
+## Overview
+The **Pharmacy Management & Billing System** is a terminal-based Python application designed to automate medicine inventory control, point-of-sale billing, GST tax calculations, and sales tracking for small to medium-sized retail pharmacies. Built using standard Python libraries and persistent CSV storage, it eliminates manual register tracking, prevents unexpected stock-outs, and streamlines daily transaction management.
 
----
+## Features
+- **Automated Billing & Invoices**: Interactive cart management, real-time stock availability check, automatic 12% GST tax calculation, and formatted receipt output.
+- **Inventory Control**: Real-time stock tracking, automatic quantity deduction upon purchase, and simple inventory restocking.
+- **Low-Stock Alerts**: Automated scanning and alerting for medicines falling below a critical stock threshold ($\le 10$ units).
+- **Sales Logging & Analytics**: Persistent transaction history tracking in `sales.csv` with total revenue and sales count summaries.
+- **CSV Data Persistence**: Clean separation of inventory (`inventory.csv`) and transaction history (`sales.csv`).
 
-##  Features
+## Technologies/Tools Used
+- **Language**: Python 3.x
+- **Standard Libraries**: `csv` (Data persistence), `os` (File verification), `datetime` (Transaction timestamping)
+- **Data Files**: `inventory.csv`, `sales.csv`
 
-- *Interactive CLI Menu*: Intuitive menu-driven control panel for seamless navigation.
-- *Inventory Management*:
-  - View current medicine stock, unit price, and IDs.
-  - Add new medicines or restock existing stock items dynamically.
-  - Automatic persistent synchronization with inventory.csv.
-- *Automated Billing & Tax Calculation*:
-  - Multi-item shopping cart with stock availability checks.
-  - Auto-calculation of 12% GST and total net payable amount.
-  - Formatted receipt output printed directly to the terminal.
-- *Low-Stock Alerting System*:
-  - Instant filtering for items with stock levels at or below critical threshold (<= 10 units).
-- *Sales Analytics & Audit Log*:
-  - Unique incremental bill generation (BILL-1001, BILL-1002, etc.).
-  - Detailed sale history logging in sales.csv with total revenue summary.
+## Steps to Install & Run the Project
 
----
+### Prerequisites
+- Python 3.8 or higher installed on your system.
 
-##  Technologies Used
-
-- *Language*: Python 3.x
-- *Standard Libraries*:
-  - csv — Persistent file storage for inventory and sales records.
-  - os — File existence checks and path verification.
-  - datetime — Timestamping sales transactions.
-
----
-
-##  Repository Structure
-
-```text
-pharmacy-management-system/
-│
-├── main.py             # Application entry point & main menu loop
-├── inventory.py        # Inventory operations (add, view, update, low-stock alert)
-├── billing.py          # Cart management, GST calculation, receipt generation
-├── inventory.csv       # CSV database for stock records
-├── sales.csv           # CSV database for transaction logs
-├── statement.md        # Problem statement & scope documentation
-└── README.md           # Setup & execution instructions
+### Setup
+1. Clone this repository:
+   ```bash
+   git clone [https://github.com/your-username/pharmacy-management-system.git](https://github.com/your-username/pharmacy-management-system.git)
+   cd pharmacy-management-system
